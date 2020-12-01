@@ -13,6 +13,8 @@
 - [**Change Directory**](https://github.com/shashi-kant10/unix#change-directory)
 - [**Make Directory**](https://github.com/shashi-kant10/unix#make-directory)
 - [**Remove empty directories**](https://github.com/shashi-kant10/unix#remove-empty-directories)
+- [**Touch command**](https://github.com/shashi-kant10/unix#touch-command)
+- [**Cat command**](https://github.com/shashi-kant10/unix#cat-command)
 
 <br>
 <hr>
@@ -22,7 +24,9 @@
 
 <br>
 
-> cal : Shows current month calendar
+cal : Shows current month calendar
+
+<br>
 
 ```bash
 
@@ -130,7 +134,9 @@ Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
 
 <br>
 
-> cd : Used to change current working directory.
+cd : Used to change current working directory.
+
+<br>
 
 > cd dir_name : Move inside a subdirectory
 
@@ -170,7 +176,9 @@ shashi@Mac-Shashi:~$
 
 <br>
 
-> mkdir : Used to create directories
+mkdir : Used to create directories
+
+<br>
 
 > mkdir dir_name : Create new directory 
 
@@ -220,7 +228,9 @@ mkdir: created directory 'test2/subject1'
 
 <br>
 
-> rmdir - Used to remove empty directories
+rmdir - Used to remove empty directories
+
+<br>
 
 > rmdir dir_name : Remove directory 
 
@@ -256,6 +266,131 @@ rmdir: removing directory, 'test2'
 shashi@Mac-Shashi:/unix$ rmdir -p -v test2/subject1
 rmdir: removing directory, 'test2/subject1'
 rmdir: removing directory, 'test2'
+
+```
+
+<br>
+<hr>
+<br>
+
+## Touch command
+
+<br>
+
+touch : Used to change, modify timestamps of a file
+
+<br>
+
+> touch fileName : Create new file 
+
+```bash
+
+shashi@Mac-Shashi:/unix$ touch file1
+
+```
+
+> Create multiple files at once
+
+```bash
+
+shashi@Mac-Shashi:/unix$ touch file1 file2
+
+```
+
+<br>
+<hr>
+<br>
+
+## Cat command
+
+<br>
+
+cat : Used to read data from the file and gives the content as output
+
+<br>
+
+> cat fileName : Display content of a file <br>
+> (Same as: cat < fileName )
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cat file1
+Heading1--
+This is file 1
+End--
+
+```
+
+> cat file1 file2 : Display content of multiple files  
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cat file3.txt file1      
+Heading3--
+This is file 3
+End--
+Heading1--
+This is file 1
+End--
+
+```
+
+> cat > fileName : Create a new file  
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cat > file3.txt
+Heading3--
+This is file 3
+End--
+
+```
+
+> cat >> fileName : Append an existing file  
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cat >> file3.txt
+End of FILE3
+^Z
+[3]+  Stopped                 cat >> file3.txt
+
+shashi@Mac-Shashi:/unix$ cat file3.txt      
+Heading3--
+This is file 3
+End--
+End of FILE3
+
+```
+
+> cat file1 > file2 : Copy contents of one file to another file  
+
+```bash
+
+shashi@Mac-Shashi:/unix$ touch file2
+
+shashi@Mac-Shashi:/unix$ cat file1 > file2        
+
+shashi@Mac-Shashi:/unix$ cat file2
+Heading1--
+This is file 1
+End--
+
+```
+
+> cat file1 >> file2 : Append contents of one file to another file  
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cat file1 >> file2
+
+shashi@Mac-Shashi:/unix$ cat file2
+Heading--
+This is file 1
+End
+Heading--
+This is file 1
+End
 
 ```
 
