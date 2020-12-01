@@ -15,6 +15,9 @@
 - [**Remove empty directories**](https://github.com/shashi-kant10/unix#remove-empty-directories)
 - [**Touch command**](https://github.com/shashi-kant10/unix#touch-command)
 - [**Cat command**](https://github.com/shashi-kant10/unix#cat-command)
+- [**ls command**](https://github.com/shashi-kant10/unix#ls-command)
+- [**Pwd command**](https://github.com/shashi-kant10/unix#pwd-command)
+- [**Echo command**](https://github.com/shashi-kant10/unix#echo-command)
 
 <br>
 <hr>
@@ -391,6 +394,216 @@ End
 Heading--
 This is file 1
 End
+
+```
+
+<br>
+<hr>
+<br>
+
+## ls command
+
+<br>
+
+ls - Used to list directory contents
+
+<br>
+
+> ls : list all files of current directory
+
+```bash
+
+shashi@Mac-Shashi:/unix$ ls 
+README.md  file1.txt  file2  scripting  test1  test2
+
+```
+
+> ls -l : display all information about files and subdirectories 
+
+```bash
+
+shashi@Mac-Shashi:/unix$ ls -l
+total 8
+-rwxrwxrwx 1 shashi shashi 7024 Dec  1 19:12 README.md
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:30 file1.txt
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:29 file2    
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 11:28 scripting
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:28 test1    
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:29 test2    
+
+```
+
+> ls -t : Order files based on last modified time
+
+```bash
+
+shashi@Mac-Shashi:/unix$ ls -t -l
+total 8
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:30 file1.txt
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:29 file2    
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:29 test2    
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:28 test1    
+-rwxrwxrwx 1 shashi shashi 7024 Dec  1 19:12 README.md
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 11:28 scripting
+
+```
+
+> -r : Reverse the order of files
+
+```bash
+
+shashi@Mac-Shashi:/unix$ ls -t -r -l
+total 8
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 11:28 scripting
+-rwxrwxrwx 1 shashi shashi 7024 Dec  1 19:12 README.md
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:28 test1    
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:29 test2    
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:29 file2    
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:30 file1.txt
+
+```
+
+> ls -S : Order files based on size
+
+```bash
+
+shashi@Mac-Shashi:/unix$ ls -S -l
+total 12
+-rwxrwxrwx 1 shashi shashi 9432 Dec  1 19:53 README.md
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 11:28 scripting
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:28 test1
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:29 test2
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:30 file1.txt
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:29 file2
+
+```
+
+> -R : Display files recursively
+
+```bash
+
+shashi@Mac-Shashi:/unix$ ls -l -R
+.:
+total 12
+-rwxrwxrwx 1 shashi shashi 8696 Dec  1 19:50 README.md
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:30 file1.txt
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:29 file2    
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 11:28 scripting
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:28 test1    
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:29 test2    
+
+./scripting:
+total 0
+-rwxrwxrwx 1 shashi shashi 416 Dec  1 12:05 variables.sh
+
+./test1:
+total 0
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:28 subject1
+
+./test1/subject1:
+total 0
+
+./test2:
+total 0
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:29 subject1
+
+./test2/subject1:
+total 0
+
+```
+
+> ls -a : Display hidden files
+
+```bash
+
+shashi@Mac-Shashi:/unix$ ls -a -l
+total 8
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:30 .
+drwxrwxrwx 1 shashi shashi 4096 Nov 30 23:23 ..
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:12 .git
+-rwxrwxrwx 1 shashi shashi 7024 Dec  1 19:12 README.md
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:30 file1.txt
+-rwxrwxrwx 1 shashi shashi    0 Dec  1 19:29 file2
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 11:28 scripting
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:28 test1
+drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:29 test2
+
+```
+
+<br>
+<hr>
+<br>
+
+## pwd command
+
+<br>
+
+pwd -  Print working directory
+
+<br>
+
+> pwd : Used to print absolute path of current directory 
+
+```bash
+
+shashi@Mac-Shashi:~$ pwd
+/home/shashi
+
+shashi@Mac-Shashi:~$ cd unix
+
+shashi@Mac-Shashi:/unix$ pwd
+/unix
+
+```
+
+<br>
+<hr>
+<br>
+
+## echo command
+
+<br>
+
+echo - Used to display a line of text
+
+<br>
+
+> echo "string" : Display text 
+
+```bash
+
+shashi@Mac-Shashi:/unix$ echo "Hello"
+Hello
+
+```
+
+> \n : Create new line <br>
+> -e : Enable interpretation of backslash escape <br>
+> \t : Tab Space
+
+```bash
+
+shashi@Mac-Shashi:/unix$ echo -e "Hi, I'm Shashi.\nAndroid Developer."
+Hi, I'm Shashi.
+Android Developer.
+
+```
+
+> \r : carriage return with backspace interpretor
+
+```bash
+
+shashi@Mac-Shashi:/unix$ echo -e "Hi \rI'm Shashi"        
+I'm Shashi
+
+```
+
+> echo * : Prints all files/directory (similar to ls command)
+
+```bash
+
+shashi@Mac-Shashi:/unix$ echo *
+README.md file1.txt file2 scripting test1 test2
 
 ```
 
