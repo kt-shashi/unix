@@ -7,7 +7,18 @@
 
 <br>
 
-## Calender
+## Topics Covered:
+
+- [**Calendar**](https://github.com/shashi-kant10/unix#calender)
+- [**Change Directory**](https://github.com/shashi-kant10/unix#change-directory)
+- [**Make Directory**](https://github.com/shashi-kant10/unix#make-directory)
+- [**Remove empty directories**](https://github.com/shashi-kant10/unix#remove-empty-directories)
+
+<br>
+<hr>
+<br>
+
+## Calendar
 
 <br>
 
