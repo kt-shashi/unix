@@ -21,6 +21,8 @@
 - [**Copy command**](https://github.com/shashi-kant10/unix#cp-command)
 - [**Move command**](https://github.com/shashi-kant10/unix#mv-command)
 - [**chmod command**](https://github.com/shashi-kant10/unix#chmod-command)
+- [**Word count**](https://github.com/shashi-kant10/unix#wc-command)
+- [**Other commands**](https://github.com/shashi-kant10/unix#other-commands)
 
 <br>
 <hr>
@@ -48,7 +50,7 @@ Su Mo Tu We Th Fr Sa
 
 ```
 
-> cal -3 : Shows n months including, the curent, previous and upcoimng months.
+cal -3 : Shows n months including, the curent, previous and upcoimng months.
 
 ```bash
 
@@ -65,7 +67,7 @@ Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
 
 ```
 
-> cal -m 7 : Show a particular month.
+cal -m 7 : Show a particular month.
 
 ```bash
 
@@ -81,7 +83,7 @@ Su Mo Tu We Th Fr Sa
 
 ```
 
-> cal -y 2020 : Shows the whole calendar of the year
+cal -y 2020 : Shows the whole calendar of the year
 
 ```bash
 
@@ -89,7 +91,7 @@ shashi@Mac-Shashi:/unix$ cal -y 2020
 
 ```
 
-> cal -m 3 2010 : Show a particular month of a particular year
+cal -m 3 2010 : Show a particular month of a particular year
 
 ```bash
 
@@ -105,7 +107,7 @@ Su Mo Tu We Th Fr Sa
 
 ```
 
-> cal -A 1 : Shows the current month and the next n months. (A - After) <br> cal -B 1 : Shows the current month and the previous n months. (B - Before)
+cal -A 1 : Shows the current month and the next n months. (A - After) <br> cal -B 1 : Shows the current month and the previous n months. (B - Before)
 
 ```bash
 
@@ -144,7 +146,7 @@ cd : Used to change current working directory.
 
 <br>
 
-> cd dir_name : Move inside a subdirectory
+cd dir_name : Move inside a subdirectory
 
 ```bash
 
@@ -154,7 +156,7 @@ shashi@Mac-Shashi:/unix/newfolder$
 
 ```
 
-> cd .. : Move to the parent of current directory
+cd .. : Move to the parent of current directory
 
 ```bash
 
@@ -164,7 +166,7 @@ shashi@Mac-Shashi:/folder$
 
 ```
 
-> cd : Change current directory to home directory
+cd : Change current directory to home directory
 
 ```bash
 
@@ -186,7 +188,7 @@ mkdir : Used to create directories
 
 <br>
 
-> mkdir dir_name : Create new directory 
+mkdir dir_name : Create new directory 
 
 ```bash
 
@@ -194,7 +196,7 @@ shashi@Mac-Shashi:/unix$ mkdir newfolder
 
 ```
 
-> mkdir dir1 dir2 dir3 : create multiple directories
+mkdir dir1 dir2 dir3 : create multiple directories
 
 ```bash
 
@@ -202,7 +204,7 @@ shashi@Mac-Shashi:/unix$ mkdir folder1 folder2 folder3
 
 ```
 
-> mkdir -p parent_dir/child_dir : create multiple directories and subdirectories 
+mkdir -p parent_dir/child_dir : create multiple directories and subdirectories 
 
 ```bash
 
@@ -210,7 +212,7 @@ shashi@Mac-Shashi:/unix$ mkdir -p parentFolder/childFolder
 
 ```
 
-> -v : Print a message for each created directory
+-v : Print a message for each created directory
 
 ```bash
 
@@ -238,7 +240,15 @@ rmdir - Used to remove empty directories
 
 <br>
 
-> rmdir dir_name : Remove directory 
+Syntax: 
+
+```bash
+
+rmdir dir_name : Remove directory 
+
+```
+
+Example:
 
 ```bash
 
@@ -246,7 +256,7 @@ shashi@Mac-Shashi:/unix$ rmdir test1
 
 ```
 
-> -v : Print a message for each deleted directory
+-v : Print a message for each deleted directory
 
 ```bash
 
@@ -255,7 +265,7 @@ rmdir: removing directory, 'test1'
 
 ```
 
-> rmdir dir1 dir2: Delete multiple directories 
+rmdir dir1 dir2: Delete multiple directories 
 
 ```bash
 
@@ -265,7 +275,7 @@ rmdir: removing directory, 'test2'
 
 ```
 
-> rmdir -p parent_dir/child_dir: Delete parent and child directories and subdirectories at once 
+rmdir -p parent_dir/child_dir: Delete parent and child directories and subdirectories at once 
 
 ```bash
 
@@ -287,7 +297,7 @@ touch : Used to change, modify timestamps of a file
 
 <br>
 
-> touch fileName : Create new file 
+touch fileName : Create new file 
 
 ```bash
 
@@ -295,7 +305,7 @@ shashi@Mac-Shashi:/unix$ touch file1
 
 ```
 
-> Create multiple files at once
+Create multiple files at once
 
 ```bash
 
@@ -315,8 +325,8 @@ cat : Used to read data from the file and gives the content as output
 
 <br>
 
-> cat fileName : Display content of a file <br>
-> (Same as: cat < fileName )
+cat fileName : Display content of a file <br>
+(Same as: cat < fileName )
 
 ```bash
 
@@ -327,7 +337,7 @@ End--
 
 ```
 
-> cat file1 file2 : Display content of multiple files  
+cat file1 file2 : Display content of multiple files  
 
 ```bash
 
@@ -341,7 +351,7 @@ End--
 
 ```
 
-> cat > fileName : Create a new file  
+cat > fileName : Create a new file  
 
 ```bash
 
@@ -352,7 +362,7 @@ End--
 
 ```
 
-> cat >> fileName : Append an existing file  
+cat >> fileName : Append an existing file  
 
 ```bash
 
@@ -369,7 +379,7 @@ End of FILE3
 
 ```
 
-> cat file1 > file2 : Copy contents of one file to another file  
+cat file1 > file2 : Copy contents of one file to another file  
 
 ```bash
 
@@ -384,7 +394,7 @@ End--
 
 ```
 
-> cat file1 >> file2 : Append contents of one file to another file  
+cat file1 >> file2 : Append contents of one file to another file  
 
 ```bash
 
@@ -412,7 +422,7 @@ ls - Used to list directory contents
 
 <br>
 
-> ls : list all files of current directory
+ls : list all files of current directory
 
 ```bash
 
@@ -421,7 +431,7 @@ README.md  file1.txt  file2  scripting  test1  test2
 
 ```
 
-> ls -l : display all information about files and subdirectories 
+ls -l : display all information about files and subdirectories 
 
 ```bash
 
@@ -436,7 +446,7 @@ drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:29 test2
 
 ```
 
-> ls -t : Order files based on last modified time
+ls -t : Order files based on last modified time
 
 ```bash
 
@@ -451,7 +461,7 @@ drwxrwxrwx 1 shashi shashi 4096 Dec  1 11:28 scripting
 
 ```
 
-> -r : Reverse the order of files
+-r : Reverse the order of files
 
 ```bash
 
@@ -466,7 +476,7 @@ drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:29 test2
 
 ```
 
-> ls -S : Order files based on size
+ls -S : Order files based on size
 
 ```bash
 
@@ -481,7 +491,7 @@ drwxrwxrwx 1 shashi shashi 4096 Dec  1 19:29 test2
 
 ```
 
-> -R : Display files recursively
+-R : Display files recursively
 
 ```bash
 
@@ -515,7 +525,7 @@ total 0
 
 ```
 
-> ls -a : Display hidden files
+ls -a : Display hidden files
 
 ```bash
 
@@ -545,7 +555,7 @@ pwd -  Print working directory
 
 <br>
 
-> pwd : Used to print absolute path of current directory 
+pwd : Used to print absolute path of current directory 
 
 ```bash
 
@@ -571,7 +581,7 @@ echo - Used to display a line of text
 
 <br>
 
-> echo "string" : Display text 
+echo "string" : Display text 
 
 ```bash
 
@@ -580,9 +590,9 @@ Hello
 
 ```
 
-> \n : Create new line <br>
-> -e : Enable interpretation of backslash escape <br>
-> \t : Tab Space
+ \n : Create new line <br>
+-e : Enable interpretation of backslash escape <br>
+\t : Tab Space
 
 ```bash
 
@@ -592,7 +602,7 @@ Android Developer.
 
 ```
 
-> \r : carriage return with backspace interpretor
+\r : carriage return with backspace interpretor
 
 ```bash
 
@@ -601,7 +611,7 @@ I'm Shashi
 
 ```
 
-> echo * : Prints all files/directory (similar to ls command)
+echo * : Prints all files/directory (similar to ls command)
 
 ```bash
 
@@ -622,7 +632,7 @@ cp : (Copy) Used to copy files
 
 <br>
 
-> Syntax
+Syntax
 
 ```bash
 
@@ -630,7 +640,7 @@ cp [OPTION] Source Directory NewName
 
 ```
 
-> Copy file: Test1Subject1.txt into Test1/Subject1
+Copy file: Test1Subject1.txt into Test1/Subject1
 
 ```bash
 
@@ -638,7 +648,7 @@ shashi@Mac-Shashi:/unix$ cp test1subject1.txt /unix/test1/subject1/test1subj1.tx
 
 ```
 
-> -i (Interactive): -i option asks the user for confirmation before copying a file that would overwrite an existing file [y : Yes , n : No]
+-i (Interactive): -i option asks the user for confirmation before copying a file that would overwrite an existing file [y : Yes , n : No]
 
 ```bash
 
@@ -647,7 +657,7 @@ cp: overwrite 'unix/test1/subject1/test1subj1.txt'? y
 
 ```
 
-> Rename a file (Copy the file with a different name)
+Rename a file (Copy the file with a different name)
 
 ```bash
 
@@ -667,7 +677,7 @@ mv : (Move) Used to move files from one place to another
 
 <br>
 
-> Syntax
+Syntax
 
 ```bash
 
@@ -675,7 +685,7 @@ mv [Option] source destination
 
 ```
 
-> Move file: Test1Subject2.txt into Test1/Subject2
+Move file: Test1Subject2.txt into Test1/Subject2
 
 ```bash
 
@@ -683,7 +693,7 @@ shashi@Mac-Shashi:/unix$ mv test1subject2.txt /unix/test1/subject2
 
 ```
 
-> -i (Interactive): -i option asks the user for confirmation before moving a file that would overwrite an existing file [y : Yes , n : No]
+-i (Interactive): -i option asks the user for confirmation before moving a file that would overwrite an existing file [y : Yes , n : No]
 
 ```bash
 
@@ -704,7 +714,7 @@ chmod : (Change mode) To change access permissions
 
 <br>
 
-> Syntax
+Syntax
 
 ```bash
 
@@ -712,7 +722,7 @@ chmod [reference][operator][mode] file_name
 
 ```
 
-> Understanding file permissions <br><br>
+Understanding file permissions <br><br>
 When we hit the ls -l commands, we see this string of letters, drwxrwxr-x. This represents the permissions that are set for this folder/file. <br><br>
 d-rw-r--r-- <br><br>
 First character specifies the type, where <br>
@@ -749,7 +759,7 @@ drwxrwxr-x. 3 shashi shashi 21 Dec  2 07:30 test2
 
 ```
 
-> Add execute permission to File1
+Add execute permission to File1
 
 ```bash
 
@@ -757,7 +767,7 @@ drwxrwxr-x. 3 shashi shashi 21 Dec  2 07:30 test2
 
 ```
 
-> We can see the difference in permission, when we enter ls -l command<br><br>
+We can see the difference in permission, when we enter ls -l command<br><br>
 Before<br>
 -rw-rw-r--. 1 shashi shashi  0 Dec  2 07:32 file1<br><br>
 After<br>
@@ -765,9 +775,9 @@ After<br>
 
 <br>
 
-> Give multiple permissions
+Give multiple permissions
 
-> In this example: we will give write and execute permission to other group for File1
+In this example: we will give write and execute permission to other group for File1
 
 ```bash
 
@@ -775,7 +785,7 @@ After<br>
 
 ```
 
-> We can see the difference in permission, when we enter ls -l command<br><br>
+We can see the difference in permission, when we enter ls -l command<br><br>
 Before<br>
 -rw-rw-r--. 1 shashi shashi  0 Dec  2 07:32 file1<br><br>
 After<br>
@@ -783,9 +793,9 @@ After<br>
 
 <br>
 
-> Remove permission
+Remove permission
 
-> Remove read permission of File1 from others
+Remove read permission of File1 from others
 
 ```bash
 
@@ -793,10 +803,114 @@ After<br>
 
 ```
 
-> We can see the difference in permission, when we enter ls -l command<br><br>
+We can see the difference in permission, when we enter ls -l command<br><br>
 Before<br>
 -rwxrw-rwx. 1 shashi shashi  0 Dec  2 07:32 file1<br><br>
 After<br>
 -rwxrw--wx. 1 shashi shashi  0 Dec  2 07:32 file1
+
+<br>
+<hr>
+<br>
+
+## wc command
+
+<br>
+
+wc : (Word count) Used to count words, characters and lines in file(s)
+
+<br>
+
+Syntax
+
+```bash
+
+wc [Option] fileName
+
+```
+
+Eg: wc file1.txt : Displays lines, words and no of characters in file1  
+
+```bash
+
+shashi@Mac-Shashi:/unix$ wc file1.txt
+ 3 13 63 file1.txt
+
+```
+
+Using tags: [l = lines, c = characters, w = words]
+
+```bash
+
+shashi@Mac-Shashi:/unix$ wc -l file1.txt
+3 file1.txt
+shashi@Mac-Shashi:/unix$ wc -c file1.txt
+63 file1.txt
+shashi@Mac-Shashi:/unix$ wc -w file1.txt
+13 file1.txt
+
+```
+
+<br>
+<hr>
+<br>
+
+## rm command
+
+<br>
+
+rm : Remove files or directories
+
+<br>
+
+Syntax
+
+```bash
+
+rm [Option] fileName
+
+```
+
+Delete file1
+
+```bash
+
+shashi@Mac-Shashi:/unix$ rm file1.txt
+
+```
+
+-i (Interactive Deletion): Ask the user for confirmation before removing each file, [ y = Yes, n = No ]
+
+```bash
+
+shashi@Mac-Shashi:/unix$ rm -i file2.txt
+rm: remove regular file 'file2.txt'? y
+
+```
+
+Delete directory
+
+-r : Remove directories and their contents
+
+```bash
+
+shashi@Mac-Shashi:/mnt/d/coding/unix$ rm -r test1
+
+```
+
+[ -f (Force deletion): -f option removes the file forcefully ]
+
+<br>
+<hr>
+<br>
+
+## Other commands
+
+<br>
+
+man : used to display the user manual of any command (man command_name)<br><br>
+who : used to get information about currently logged in user on to system<br><br>
+uname : displays the information about the system (-a : For all info)<br><br>
+tty: prints the file name of the TERMINAL connected to standard input<br><br>
 
 </div>
