@@ -20,6 +20,7 @@
 - [**Echo command**](https://github.com/shashi-kant10/unix#echo-command)
 - [**Copy command**](https://github.com/shashi-kant10/unix#cp-command)
 - [**Move command**](https://github.com/shashi-kant10/unix#mv-command)
+- [**chmod command**](https://github.com/shashi-kant10/unix#chmod-command)
 
 <br>
 <hr>
@@ -690,5 +691,112 @@ shashi@Mac-Shashi:/unix$ mv -i test1subj2.txt /unix/test2/subject2
 mv: overwrite '/unix/test2/subject2'? y
 
 ```
+
+<br>
+<hr>
+<br>
+
+## chmod command
+
+<br>
+
+chmod : (Change mode) To change access permissions
+
+<br>
+
+> Syntax
+
+```bash
+
+chmod [reference][operator][mode] file_name
+
+```
+
+> Understanding file permissions <br><br>
+When we hit the ls -l commands, we see this string of letters, drwxrwxr-x. This represents the permissions that are set for this folder/file. <br><br>
+d-rw-r--r-- <br><br>
+First character specifies the type, where <br>
+'d' : directory <br>
+'-' : file <br><br>
+Next 3 characters : Owner/User permissions <br>
+Next 3 characters : Owner/User's group permissions <br>
+Next 3 characters : Other group permissions <br><br>
+Reference:<br>
+'u' : user<br>
+'g' : group<br>
+'o' : other group<br>
+'a' : all<br><br>
+Operator:<br>
+'+' : add a permission<br>
+'-' : remove a permission<br>
+'=' : remove previous permissions and save current permission<br><br>
+Mode:<br>
+r : read<br>
+w : write<br>
+x : execute<br>
+
+```bash
+
+[shashi@ubuntu ~]$ls -l
+total 4
+drwxrwxr-x. 2 shashi shashi 18 Sep  1 05:58 dir1
+drwxrwxr-x. 3 shashi shashi 17 Aug 24 17:51 dir2
+-rw-rw-r--. 1 shashi shashi  0 Dec  2 07:32 file1
+-rw-rw-r--. 1 shashi shashi  0 Dec  2 07:32 file2
+-rw-rw-r--. 1 shashi shashi 17 Dec  2 07:31 t2s1.txt
+drwxrwxr-x. 3 shashi shashi 21 Dec  2 07:30 test1
+drwxrwxr-x. 3 shashi shashi 21 Dec  2 07:30 test2
+
+```
+
+> Add execute permission to File1
+
+```bash
+
+[shashi@ubuntu ~]$chmod u+x file1 
+
+```
+
+> We can see the difference in permission, when we enter ls -l command<br><br>
+Before<br>
+-rw-rw-r--. 1 shashi shashi  0 Dec  2 07:32 file1<br><br>
+After<br>
+-rwxrw-r--. 1 shashi shashi  0 Dec  2 07:32 file1
+
+<br>
+
+> Give multiple permissions
+
+> In this example: we will give write and execute permission to other group for File1
+
+```bash
+
+[shashi@ubuntu ~]$chmod o+wx file1             
+
+```
+
+> We can see the difference in permission, when we enter ls -l command<br><br>
+Before<br>
+-rw-rw-r--. 1 shashi shashi  0 Dec  2 07:32 file1<br><br>
+After<br>
+-rwxrw-rwx. 1 shashi shashi  0 Dec  2 07:32 file1
+
+<br>
+
+> Remove permission
+
+> Remove read permission of File1 from others
+
+```bash
+
+[shashi@ubuntu ~]$chmod o-r file1                
+
+```
+
+> We can see the difference in permission, when we enter ls -l command<br><br>
+Before<br>
+-rwxrw-rwx. 1 shashi shashi  0 Dec  2 07:32 file1<br><br>
+After<br>
+-rwxrw--wx. 1 shashi shashi  0 Dec  2 07:32 file1
 
 </div>
