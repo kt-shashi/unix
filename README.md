@@ -18,6 +18,8 @@
 - [**ls command**](https://github.com/shashi-kant10/unix#ls-command)
 - [**Pwd command**](https://github.com/shashi-kant10/unix#pwd-command)
 - [**Echo command**](https://github.com/shashi-kant10/unix#echo-command)
+- [**Copy command**](https://github.com/shashi-kant10/unix#cp-command)
+- [**Move command**](https://github.com/shashi-kant10/unix#mv-command)
 
 <br>
 <hr>
@@ -604,6 +606,88 @@ I'm Shashi
 
 shashi@Mac-Shashi:/unix$ echo *
 README.md file1.txt file2 scripting test1 test2
+
+```
+
+<br>
+<hr>
+<br>
+
+## cp command
+
+<br>
+
+cp : (Copy) Used to copy files
+
+<br>
+
+> Syntax
+
+```bash
+
+cp [OPTION] Source Directory NewName
+
+```
+
+> Copy file: Test1Subject1.txt into Test1/Subject1
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cp test1subject1.txt /unix/test1/subject1/test1subj1.txt
+
+```
+
+> -i (Interactive): -i option asks the user for confirmation before copying a file that would overwrite an existing file [y : Yes , n : No]
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cp -i test1subj1.txt /unix/test1/subject1
+cp: overwrite 'unix/test1/subject1/test1subj1.txt'? y
+
+```
+
+> Rename a file (Copy the file with a different name)
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cp test1subject1.txt test1copied.txt
+
+```
+
+<br>
+<hr>
+<br>
+
+## mv command
+
+<br>
+
+mv : (Move) Used to move files from one place to another
+
+<br>
+
+> Syntax
+
+```bash
+
+mv [Option] source destination
+
+```
+
+> Move file: Test1Subject2.txt into Test1/Subject2
+
+```bash
+
+shashi@Mac-Shashi:/unix$ mv test1subject2.txt /unix/test1/subject2
+
+```
+
+> -i (Interactive): -i option asks the user for confirmation before moving a file that would overwrite an existing file [y : Yes , n : No]
+
+```bash
+
+shashi@Mac-Shashi:/unix$ mv -i test1subj2.txt /unix/test2/subject2
+mv: overwrite '/unix/test2/subject2'? y
 
 ```
 
