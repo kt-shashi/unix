@@ -23,7 +23,7 @@
 - [**chmod command**](https://github.com/shashi-kant10/unix#chmod-command)
 - [**Word count**](https://github.com/shashi-kant10/unix#wc-command)
 - [**rm command**](https://github.com/shashi-kant10/unix#rm-command)
-- [**Display file (more, head, tail)**](https://github.com/shashi-kant10/unix#display-file)
+- [**Filters (more, head, tail, tr, tee, grep)**](https://github.com/shashi-kant10/unix#filters)
 - [**Date**](https://github.com/shashi-kant10/unix#date-command)
 - [**Other commands**](https://github.com/shashi-kant10/unix#other-commands)
 
@@ -907,7 +907,7 @@ shashi@Mac-Shashi:/unix$ rm -r test1
 <hr>
 <br>
 
-## Display file
+## Filters
 
 <br>
 
@@ -971,6 +971,217 @@ Example: To print only 5th and 6th line of file1
 shashi@Mac-Shashi:/unix$ head -6 file1.txt | tail -2
 line5
 line6
+
+```
+
+tr command
+
+tr : (translate) Used to translate or delete characters
+
+Syntax :
+
+```bash
+
+$ tr [OPTION] SET1 [SET2]
+
+```
+
+Say, we have a file - file1.txt
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cat file1.txt
+this is file1
+every text is written in lower case initially.
+end of file1
+
+```
+
+Change f to F in file1.txt
+
+```bash
+
+shashi@Mac-Shashi:/unix$ tr 'f' 'F' < file1.txt
+this is File1
+every text is written in lower case initially.
+end oF File1
+
+```
+
+Change file1.txt to uppercase
+
+```bash
+
+shashi@Mac-Shashi:/unix$ tr 'a-z' 'A-Z' < file1.txt
+THIS IS FILE1
+EVERY TEXT IS WRITTEN IN LOWER CASE INITIALLY.
+END OF FILE1
+
+```
+
+-d : Used to delete character(s)
+
+```bash
+
+shashi@Mac-Shashi:/unix$ tr -d '0-9' < file3.txt
+this is File
+every text is written in lower case initially.
+end oF File
+
+```
+
+tee command
+
+tee : reads the standard input and writes it to both the standard output and one or more files
+
+Syntax
+
+```bash
+
+tee [OPTION]... [FILE]...
+
+```
+
+Say we have this file
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cat file1.txt
+this is file1
+every text is written in lower case initially.
+end of file1
+
+```
+
+To save first 2 lines of file1.txt as newFile1
+
+
+```bash
+
+shashi@Mac-Shashi:/unix$ head -2 file1.txt | tee newFile1
+this is file1
+every text is written in lower case initially.
+
+shashi@Mac-Shashi:/unix$ cat newFile1
+this is file1
+every text is written in lower case initially.
+
+```
+
+grep command
+
+grep : filter searches a file for a pattern of characters and displays all lines that contain that pattern
+
+(grep : globally search for regular expression and print out)
+
+Syntax:
+
+```bash
+
+grep [options] pattern filename
+
+```
+
+Say we have this file
+
+```bash
+
+shashi@Mac-Shashi:/unix$ cat courses.txt
+java
+Java
+c
+C
+c++
+C++
+kotlin
+Kotlin
+unix
+Unix
+bell
+
+```
+
+Search for "java"
+
+```bash
+
+shashi@Mac-Shashi:/unix$ grep java courses.txt
+java
+
+```
+
+-i : Ignore case distinctions
+
+```bash
+
+shashi@Mac-Shashi:/unix$ grep -i java courses.txt
+java
+Java
+
+```
+
+-c : Count
+
+```bash
+
+shashi@Mac-Shashi:/unix$ grep -i -c java courses.txt
+2
+
+```
+
+-n : Prefix each line of output with the line number within its input file.
+
+```bash
+
+shashi@Mac-Shashi:/unix$ grep -i -n java courses.txt
+1:java
+2:Java
+
+```
+
+Using wildcards to find patterns:
+
+^ (caret) 
+
+> ^a : Find all lines and files starting with a
+
+$ (dollar sign)
+
+> a$ : Find all lines and files ending with a
+
+<br>
+Find lines starting with k
+
+```bash
+
+shashi@Mac-Shashi:/unix$ grep -i "^k" courses.txt
+kotlin
+Kotlin
+
+```
+
+Note : When 2 caret are used, the result becomes invert.
+
+Here, we get find all line starting with lower case ( [^a-z] ) and then we again write a caret ^ ( ^[^a-z] ) which reverts the output and finds lines that start with upper case instead.
+
+```bash
+
+shashi@Mac-Shashi:/unix$ grep "^[^a-z]" courses.txt
+Java
+C
+C++
+Kotlin
+Unix
+
+```
+
+Find lines ending with n
+
+```bash
+
+shashi@Mac-Shashi:/unix$ grep "n$" courses.txt
+kotlin
+Kotlin
 
 ```
 
