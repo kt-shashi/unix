@@ -22,6 +22,9 @@
 - [**Move command**](https://github.com/shashi-kant10/unix#mv-command)
 - [**chmod command**](https://github.com/shashi-kant10/unix#chmod-command)
 - [**Word count**](https://github.com/shashi-kant10/unix#wc-command)
+- [**rm command**](https://github.com/shashi-kant10/unix#rm-command)
+- [**Display file (more, head, tail)**](https://github.com/shashi-kant10/unix#display-file)
+- [**Date**](https://github.com/shashi-kant10/unix#date-command)
 - [**Other commands**](https://github.com/shashi-kant10/unix#other-commands)
 
 <br>
@@ -894,7 +897,7 @@ Delete directory
 
 ```bash
 
-shashi@Mac-Shashi:/mnt/d/coding/unix$ rm -r test1
+shashi@Mac-Shashi:/unix$ rm -r test1
 
 ```
 
@@ -904,9 +907,150 @@ shashi@Mac-Shashi:/mnt/d/coding/unix$ rm -r test1
 <hr>
 <br>
 
+## Display file
+
+<br>
+
+more : used to view the text files in the command prompt, displaying one screen at a time in case the file is large
+
+<br>
+
+```bash
+
+shashi@Mac-Shashi:/unix$ more file1.txt
+line1
+line2
+line3
+line4
+line5
+line6
+line7
+line8
+line9
+line10
+
+```
+
+head : prints the top N number of lines of the given input
+
+```bash
+
+shashi@Mac-Shashi:/unix$ head -5 file1.txt
+line1
+line2
+line3
+line4
+line5
+
+```
+
+tail : prints the last N number of lines of the given input
+
+```bash
+
+shashi@Mac-Shashi:/unix$ tail -5 file1.txt
+line6
+line7
+line8
+line9
+line10
+
+```
+
+Pipe "|" : Used to combine two or more commands, and in this, the output of one command acts as input to another command
+
+[ Note :  Data flows from left to right through the pipeline ]
+
+Example: To print only 5th and 6th line of file1
+
+- Use head command to get first 6 lines
+- Use tail command to get last 2 lines
+
+```bash
+
+shashi@Mac-Shashi:/unix$ head -6 file1.txt | tail -2
+line5
+line6
+
+```
+
+<br>
+<hr>
+<br>
+
+## Date command
+
+<br>
+
+date : Used to display the system date and time
+
+Syntax:
+
+```bash
+
+date [option]
+
+```
+
+Display the current date and time
+
+```bash
+
+shashi@Mac-Shashi:~$ date
+Thu Dec  3 16:29:24 IST 2020
+
+```
+
+Display the month
+
+```bash
+
+shashi@Mac-Shashi:~$ date +%m
+12
+
+```
+
+Display the month name
+
+```bash
+
+shashi@Mac-Shashi:~$ date +%h
+Dec
+
+```
+
+Combine multiple commands
+
+```bash
+
+shashi@Mac-Shashi:~$ date +"%h %m"
+Dec 12
+
+```
+
+D - The date in the format mm/dd/yy <br>
+H, M and S - The hour, minute and second, respectively
+
+```bash
+
+shashi@Mac-Shashi:~$ date +%D
+12/03/20
+
+```
+
+<br>
+<hr>
+<br>
+
 ## Other commands
 
 <br>
+
+echo : used in shell scripts to display messages on the terminal.<br>
+
+We use it in two ways:
+- To display a message (echo shashi).
+- To evaluate shell variables (echo $SHELL).
 
 man : used to display the user manual of any command (man command_name)<br><br>
 who : used to get information about currently logged in user on to system<br><br>
