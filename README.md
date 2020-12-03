@@ -580,7 +580,11 @@ shashi@Mac-Shashi:/unix$ pwd
 
 <br>
 
-echo - Used to display a line of text
+echo - Used to display messages on the terminal
+
+We use it in two ways:
+- To display a message (echo shashi)
+- To evaluate shell variables (echo $SHELL)
 
 <br>
 
@@ -593,7 +597,7 @@ Hello
 
 ```
 
- \n : Create new line <br>
+\n : Create new line <br>
 -e : Enable interpretation of backslash escape <br>
 \t : Tab Space
 
@@ -1256,12 +1260,6 @@ shashi@Mac-Shashi:~$ date +%D
 ## Other commands
 
 <br>
-
-echo : used in shell scripts to display messages on the terminal.<br>
-
-We use it in two ways:
-- To display a message (echo shashi).
-- To evaluate shell variables (echo $SHELL).
 
 man : used to display the user manual of any command (man command_name)<br><br>
 who : used to get information about currently logged in user on to system<br><br>
