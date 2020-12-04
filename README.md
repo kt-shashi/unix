@@ -26,6 +26,7 @@
 - [**Filters (more, head, tail, tr, tee, grep)**](https://github.com/shashi-kant10/unix#filters)
 - [**Date**](https://github.com/shashi-kant10/unix#date-command)
 - [**Other commands**](https://github.com/shashi-kant10/unix#other-commands)
+- [**Shell Scripting**](https://github.com/shashi-kant10/unix#shell-scripting)
 
 <br>
 <hr>
@@ -1265,5 +1266,19 @@ man : used to display the user manual of any command (man command_name)<br><br>
 who : used to get information about currently logged in user on to system<br><br>
 uname : displays the information about the system (-a : For all info)<br><br>
 tty: prints the file name of the TERMINAL connected to standard input<br><br>
+
+<br>
+<hr>
+<br>
+
+## Shell Scripting
+
+<br>
+
+- [**Variables**](https://github.com/shashi-kant10/unix/blob/master/scripting/variables.sh)
+
+- [**User Input**](https://github.com/shashi-kant10/unix/blob/master/scripting/userinput.sh)
+
+- [**If else**](https://github.com/shashi-kant10/unix/blob/master/scripting/ifelse.sh)
 
 </div>
