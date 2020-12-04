@@ -2,7 +2,7 @@
 
 echo "Enter name : "
 
-User input is stored in name variable
+# User input is stored in name variable
 read name
 
 echo "Name is : $name"
