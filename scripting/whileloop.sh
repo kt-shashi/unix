@@ -9,7 +9,6 @@
 # done
 
 n=1
-
 while [ $n -le 10 ]
 do
     echo "N = $n"
@@ -25,3 +24,19 @@ do
     (( n++ ))
     sleep 1
 done
+
+# Reading contents of a file
+
+# Method 1
+
+cat whileloop.sh | while read line
+do
+    echo $line
+done
+
+# Method 2
+
+while IFS=' ' read -r line
+do
+    echo $line
+done < whileloop.sh

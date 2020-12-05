@@ -1297,4 +1297,6 @@ tty: prints the file name of the TERMINAL connected to standard input<br><br>
 
 - [**While loop**](https://github.com/shashi-kant10/unix/blob/master/scripting/whileloop.sh)
 
+- [**For loop**](https://github.com/shashi-kant10/unix/blob/master/scripting/forloop.sh)
+
 </div>
