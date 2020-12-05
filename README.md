@@ -1283,4 +1283,6 @@ tty: prints the file name of the TERMINAL connected to standard input<br><br>
 
 - [**File Test Operators**](https://github.com/shashi-kant10/unix/blob/master/scripting/filetestoperator.sh)
 
+- [**Append data to file**](https://github.com/shashi-kant10/unix/blob/master/scripting/appendtofile.sh)
+
 </div>
