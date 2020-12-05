@@ -1291,6 +1291,6 @@ tty: prints the file name of the TERMINAL connected to standard input<br><br>
 
 - [**Operations on decimal value, Sqrt, Power**](https://github.com/shashi-kant10/unix/blob/master/scripting/floatoperations.sh)
 
-- [**Operations on decimal value, Sqrt, Power**](https://github.com/shashi-kant10/unix/blob/master/scripting/casestatement.sh)
+- [**Case statement**](https://github.com/shashi-kant10/unix/blob/master/scripting/casestatement.sh)
 
 </div>
