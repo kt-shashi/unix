@@ -1287,4 +1287,8 @@ tty: prints the file name of the TERMINAL connected to standard input<br><br>
 
 - [**And Or operators**](https://github.com/shashi-kant10/unix/blob/master/scripting/andor.sh)
 
+- [**Arithmetic operations**](https://github.com/shashi-kant10/unix/blob/master/scripting/andor.sh)
+
+- [**Operations on decimal value, Sqrt, Power**](https://github.com/shashi-kant10/unix/blob/master/scripting/floatoperations.sh)
+
 </div>
