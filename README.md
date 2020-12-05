@@ -25,7 +25,7 @@
 - [**rm command**](https://github.com/shashi-kant10/unix#rm-command)
 - [**Filters (more, head, tail, tr, tee, grep)**](https://github.com/shashi-kant10/unix#filters)
 - [**Date**](https://github.com/shashi-kant10/unix#date-command)
-- [**Other commands**](https://github.com/shashi-kant10/unix#other-commands)
+- [**Others (man, who, uname, tty)**](https://github.com/shashi-kant10/unix#other-commands)
 - [**Shell Scripting**](https://github.com/shashi-kant10/unix#shell-scripting)
 
 <br>
@@ -1284,5 +1284,7 @@ tty: prints the file name of the TERMINAL connected to standard input<br><br>
 - [**File Test Operators**](https://github.com/shashi-kant10/unix/blob/master/scripting/filetestoperator.sh)
 
 - [**Append data to file**](https://github.com/shashi-kant10/unix/blob/master/scripting/appendtofile.sh)
+
+- [**And Or operators**](https://github.com/shashi-kant10/unix/blob/master/scripting/andor.sh)
 
 </div>
