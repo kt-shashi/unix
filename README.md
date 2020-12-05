@@ -1293,4 +1293,8 @@ tty: prints the file name of the TERMINAL connected to standard input<br><br>
 
 - [**Case statement**](https://github.com/shashi-kant10/unix/blob/master/scripting/casestatement.sh)
 
+- [**Array**](https://github.com/shashi-kant10/unix/blob/master/scripting/array.sh)
+
+- [**While loop**](https://github.com/shashi-kant10/unix/blob/master/scripting/whileloop.sh)
+
 </div>
