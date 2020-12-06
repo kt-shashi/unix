@@ -1305,4 +1305,6 @@ tty: prints the file name of the TERMINAL connected to standard input<br><br>
 
 - [**Function example program**](https://github.com/shashi-kant10/unix/blob/master/scripting/functions2.sh)
 
+- [**Prime number program**](https://github.com/shashi-kant10/unix/blob/master/scripting/primenumber.sh)
+
 </div>
