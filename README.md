@@ -1299,4 +1299,10 @@ tty: prints the file name of the TERMINAL connected to standard input<br><br>
 
 - [**For loop**](https://github.com/shashi-kant10/unix/blob/master/scripting/forloop.sh)
 
+- [**Break and Continue**](https://github.com/shashi-kant10/unix/blob/master/scripting/breakcontinue.sh)
+
+- [**Functions and Local variables**](https://github.com/shashi-kant10/unix/blob/master/scripting/functions.sh)
+
+- [**Function example program**](https://github.com/shashi-kant10/unix/blob/master/scripting/functions2.sh)
+
 </div>
