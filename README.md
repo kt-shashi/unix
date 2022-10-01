@@ -9,24 +9,24 @@
 
 ## Topics Covered:
 
-- [**Calendar**](https://github.com/shashi-kant10/unix#calendar)
-- [**Change Directory**](https://github.com/shashi-kant10/unix#change-directory)
-- [**Make Directory**](https://github.com/shashi-kant10/unix#make-directory)
-- [**Remove empty directories**](https://github.com/shashi-kant10/unix#remove-empty-directories)
-- [**Touch command**](https://github.com/shashi-kant10/unix#touch-command)
-- [**Cat command**](https://github.com/shashi-kant10/unix#cat-command)
-- [**ls command**](https://github.com/shashi-kant10/unix#ls-command)
-- [**Pwd command**](https://github.com/shashi-kant10/unix#pwd-command)
-- [**Echo command**](https://github.com/shashi-kant10/unix#echo-command)
-- [**Copy command**](https://github.com/shashi-kant10/unix#cp-command)
-- [**Move command**](https://github.com/shashi-kant10/unix#mv-command)
-- [**chmod command**](https://github.com/shashi-kant10/unix#chmod-command)
-- [**Word count**](https://github.com/shashi-kant10/unix#wc-command)
-- [**rm command**](https://github.com/shashi-kant10/unix#rm-command)
-- [**Filters (more, head, tail, tr, tee, grep)**](https://github.com/shashi-kant10/unix#filters)
-- [**Date**](https://github.com/shashi-kant10/unix#date-command)
-- [**Others (man, who, uname, tty)**](https://github.com/shashi-kant10/unix#other-commands)
-- [**Shell Scripting**](https://github.com/shashi-kant10/unix#shell-scripting)
+- [**Calendar**](https://github.com/kt-shashi/unix#calendar)
+- [**Change Directory**](https://github.com/kt-shashi/unix#change-directory)
+- [**Make Directory**](https://github.com/kt-shashi/unix#make-directory)
+- [**Remove empty directories**](https://github.com/kt-shashi/unix#remove-empty-directories)
+- [**Touch command**](https://github.com/kt-shashi/unix#touch-command)
+- [**Cat command**](https://github.com/kt-shashi/unix#cat-command)
+- [**ls command**](https://github.com/kt-shashi/unix#ls-command)
+- [**Pwd command**](https://github.com/kt-shashi/unix#pwd-command)
+- [**Echo command**](https://github.com/kt-shashi/unix#echo-command)
+- [**Copy command**](https://github.com/kt-shashi/unix#cp-command)
+- [**Move command**](https://github.com/kt-shashi/unix#mv-command)
+- [**chmod command**](https://github.com/kt-shashi/unix#chmod-command)
+- [**Word count**](https://github.com/kt-shashi/unix#wc-command)
+- [**rm command**](https://github.com/kt-shashi/unix#rm-command)
+- [**Filters (more, head, tail, tr, tee, grep)**](https://github.com/kt-shashi/unix#filters)
+- [**Date**](https://github.com/kt-shashi/unix#date-command)
+- [**Others (man, who, uname, tty)**](https://github.com/kt-shashi/unix#other-commands)
+- [**Shell Scripting**](https://github.com/kt-shashi/unix#shell-scripting)
 
 <br>
 <hr>
@@ -1275,38 +1275,38 @@ tty: prints the file name of the TERMINAL connected to standard input<br><br>
 
 <br>
 
-- [**Variables**](https://github.com/shashi-kant10/unix/blob/master/scripting/variables.sh)
+- [**Variables**](https://github.com/kt-shashi/unix/blob/master/scripting/variables.sh)
 
-- [**User Input**](https://github.com/shashi-kant10/unix/blob/master/scripting/userinput.sh)
+- [**User Input**](https://github.com/kt-shashi/unix/blob/master/scripting/userinput.sh)
 
-- [**If else**](https://github.com/shashi-kant10/unix/blob/master/scripting/ifelse.sh)
+- [**If else**](https://github.com/kt-shashi/unix/blob/master/scripting/ifelse.sh)
 
-- [**File Test Operators**](https://github.com/shashi-kant10/unix/blob/master/scripting/filetestoperator.sh)
+- [**File Test Operators**](https://github.com/kt-shashi/unix/blob/master/scripting/filetestoperator.sh)
 
-- [**Append data to file**](https://github.com/shashi-kant10/unix/blob/master/scripting/appendtofile.sh)
+- [**Append data to file**](https://github.com/kt-shashi/unix/blob/master/scripting/appendtofile.sh)
 
-- [**And Or operators**](https://github.com/shashi-kant10/unix/blob/master/scripting/andor.sh)
+- [**And Or operators**](https://github.com/kt-shashi/unix/blob/master/scripting/andor.sh)
 
-- [**Arithmetic operations**](https://github.com/shashi-kant10/unix/blob/master/scripting/arithmeticop.sh)
+- [**Arithmetic operations**](https://github.com/kt-shashi/unix/blob/master/scripting/arithmeticop.sh)
 
-- [**Operations on decimal value, Sqrt, Power**](https://github.com/shashi-kant10/unix/blob/master/scripting/floatoperations.sh)
+- [**Operations on decimal value, Sqrt, Power**](https://github.com/kt-shashi/unix/blob/master/scripting/floatoperations.sh)
 
-- [**Case statement**](https://github.com/shashi-kant10/unix/blob/master/scripting/casestatement.sh)
+- [**Case statement**](https://github.com/kt-shashi/unix/blob/master/scripting/casestatement.sh)
 
-- [**Array**](https://github.com/shashi-kant10/unix/blob/master/scripting/array.sh)
+- [**Array**](https://github.com/kt-shashi/unix/blob/master/scripting/array.sh)
 
-- [**While loop**](https://github.com/shashi-kant10/unix/blob/master/scripting/whileloop.sh)
+- [**While loop**](https://github.com/kt-shashi/unix/blob/master/scripting/whileloop.sh)
 
-- [**For loop**](https://github.com/shashi-kant10/unix/blob/master/scripting/forloop.sh)
+- [**For loop**](https://github.com/kt-shashi/unix/blob/master/scripting/forloop.sh)
 
-- [**Break and Continue**](https://github.com/shashi-kant10/unix/blob/master/scripting/breakcontinue.sh)
+- [**Break and Continue**](https://github.com/kt-shashi/unix/blob/master/scripting/breakcontinue.sh)
 
-- [**Functions and Local variables**](https://github.com/shashi-kant10/unix/blob/master/scripting/functions.sh)
+- [**Functions and Local variables**](https://github.com/kt-shashi/unix/blob/master/scripting/functions.sh)
 
-- [**Function example program**](https://github.com/shashi-kant10/unix/blob/master/scripting/functions2.sh)
+- [**Function example program**](https://github.com/kt-shashi/unix/blob/master/scripting/functions2.sh)
 
-- [**Odd Even numbers program**](https://github.com/shashi-kant10/unix/blob/master/scripting/oddeven.sh)
+- [**Odd Even numbers program**](https://github.com/kt-shashi/unix/blob/master/scripting/oddeven.sh)
 
-- [**Prime number program**](https://github.com/shashi-kant10/unix/blob/master/scripting/primenumber.sh)
+- [**Prime number program**](https://github.com/kt-shashi/unix/blob/master/scripting/primenumber.sh)
 
 </div>
