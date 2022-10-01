@@ -174,7 +174,7 @@ cd : Change current directory to home directory
 
 ```bash
 
-shashi@Mac-Shashi:/folder$ cd ..
+shashi@Mac-Shashi:/folder$ cd
 
 shashi@Mac-Shashi:~$
 
